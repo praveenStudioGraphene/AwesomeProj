@@ -70,7 +70,7 @@ export default class ListScreen extends Component {
                                         <Image
                                             source={require('./asserts/ic_profile_image.png')} style={styles.imageStyle} />
                                     </View>
-                                    <View style={{ flex: 0, flexDirection: 'column' }}>
+                                    <View style={{ flex: 0, flexDirection: 'column', justifyContent: 'center' }}>
                                         <Text style={styles.textName}>
                                             {item.value}</Text>
                                         <Text style={styles.textSignUp}>
@@ -88,16 +88,6 @@ export default class ListScreen extends Component {
 
 
     OnBUttonPress(item) {
-        // this.props.navigator('ProfileData')
-        // navigation.navigate('ProfileData')
-        // this.props.navigator.navigate({
-        //     component: ProfileData,
-        //        props: {
-        //         name: item.name,
-        //         age: item.age,
-        //       }
-        //     });
-
         // this.props.navigator.push({
         //     id: 'ProfileData'
         //   })

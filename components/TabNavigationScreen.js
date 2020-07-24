@@ -39,9 +39,9 @@ export default class TabNavigationScreen extends Component {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if (route.name === 'List') {
-              iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
+              iconName = focused ? 'list' : 'list';
             } else if (route.name === 'Profile') {
-              iconName = focused ? 'ios-information-circle' : 'ios-information-circle';
+              iconName = focused ? 'contacts' : 'contacts';
             }
             // You can return any component that you like here!
             return <Icon name={iconName} size={size} color={color} />
